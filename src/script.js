@@ -13,7 +13,7 @@ const debugObject = {}
 
 // Colors
 debugObject.depthColor = '#186691'
-debugObject.surfaceColor = '#9bd8ff'
+debugObject.surfaceColor = '#c58326'
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
