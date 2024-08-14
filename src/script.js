@@ -12,8 +12,8 @@ const gui = new GUI({ width: 340 })
 const debugObject = {}
 
 // Colors
-debugObject.depthColor = '#0000ff'
-debugObject.surfaceColor = '#8888ff'
+debugObject.depthColor = '#186691'
+debugObject.surfaceColor = '#9bd8ff'
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
@@ -32,7 +32,7 @@ const waterMaterial = new THREE.ShaderMaterial({
     vertexShader: waterVertexShader,
     fragmentShader: waterFragmentShader,
     uniforms: {
-        uBigWavesElevation: { value: 0.2 },
+        uBigWavesElevation: { value: 0.213 },
         uBigWavesFrequency: { value: new THREE.Vector2(4, 1.5) },
         uBigWavesSpeed: { value: 0.75 },
 
@@ -40,8 +40,8 @@ const waterMaterial = new THREE.ShaderMaterial({
         
         uDepthColor: { value: new THREE.Color(debugObject.depthColor) },
         uSurfaceColor: { value: new THREE.Color(debugObject.surfaceColor) },
-        uColorOffset: { value: 0.25 },
-        uColorMultiplier: { value: 2 },
+        uColorOffset: { value: 0.19 },
+        uColorMultiplier: { value: 2.212 },
     }
 })
 
